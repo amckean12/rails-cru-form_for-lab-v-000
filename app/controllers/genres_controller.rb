@@ -15,7 +15,7 @@ class GenresController < ApplicationController
 
   def update
     @genre = Genre.find(params[:id])
-    @genre.update(name: params[:name])
+    @genre.update(genre_params)
     redirect_to genre_path(@genre)
   end
 
