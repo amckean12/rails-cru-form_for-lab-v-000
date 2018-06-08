@@ -20,7 +20,7 @@ class SongsController < ApplicationController
   end
 
   def index
-    @song = Song.find(params[:id])
+    @song = Song.find_by(params[:id])
   end
 
   def show
